@@ -3,25 +3,25 @@ module.exports = {
     {
       resolve: "gatsby-source-twitter-profiles",
       options: {
-        consumerKey: process.env.WWD_TWITTER_CONSUMER_KEY,
-        consumerSecret: process.env.WWD_TWITTER_CONSUMER_KEY,
-        bearerToken: process.env.WWD_TWITTER_BEARER_TOKEN,
-        twitterIdForFollowingList: "855501234924429312"
-      }
+        consumerKey: process.env.NWD_TWITTER_CONSUMER_KEY,
+        consumerSecret: process.env.NWD_TWITTER_CONSUMER_SECRET,
+        bearerToken: process.env.NWD_TWITTER_BEARER_TOKEN,
+        twitterIdForFollowingList: "855501234924429312",
+      },
     },
-    {
-      resolve: "gatsby-source-seeker",
-      options: {
-        key: process.env.WWD_SEEKER_KEY
-      }
-    },
+    // {
+    //   resolve: "gatsby-source-seeker",
+    //   options: {
+    //     key: process.env.WWD_SEEKER_KEY
+    //   }
+    // },
     {
       resolve: `gatsby-plugin-sass`,
       options: {
         cssLoaderOptions: {
-          camelCase: false
-        }
-      }
+          camelCase: false,
+        },
+      },
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -29,8 +29,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.WWD_GOOGLE_ANALYTICS_ID
-      }
+        trackingId: process.env.WWD_GOOGLE_ANALYTICS_ID,
+      },
     },
     {
       resolve: `gatsby-plugin-favicon`,
@@ -46,9 +46,9 @@ module.exports = {
           firefox: false,
           twitter: false,
           yandex: false,
-          windows: false
-        }
-      }
-    }
-  ]
+          windows: false,
+        },
+      },
+    },
+  ],
 };
