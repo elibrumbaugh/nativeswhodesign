@@ -8,7 +8,7 @@ module.exports = {
         consumerKey: process.env.NWD_TWITTER_CONSUMER_KEY,
         consumerSecret: process.env.NWD_TWITTER_CONSUMER_SECRET,
         bearerToken: process.env.NWD_TWITTER_BEARER_TOKEN,
-        twitterIdForFollowingList: "855501234924429312",
+        twitterIdForFollowingList: "1294699293908115457",
       },
     },
     // {
