@@ -4,13 +4,8 @@ import Nav from "../components/nav";
 import styles from "./about.module.scss";
 import { Helmet } from "react-helmet";
 import Layout from "../components/layout";
-import { graphql } from "gatsby";
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Layout>
@@ -27,7 +22,11 @@ class App extends React.Component {
           <p>Here are some things Women Who Design can help you with:</p>
           <h2 className={styles.emphasis}>
             Use{" "}
-            <a href="https://www.proporti.onl/" target="_blank">
+            <a
+              href="https://www.proporti.onl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               proporti.onl
             </a>{" "}
             to check the ratio of the people you follow on Twitter.
@@ -73,25 +72,41 @@ class App extends React.Component {
 
           <ul className={styles.ul}>
             <li className={styles.liLinks}>
-              <a target="_blank" href="https://latinxswhodesign.com">
+              <a
+                target="_blank"
+                href="https://latinxswhodesign.com"
+                rel="noopener noreferrer"
+              >
                 Latinxs Who Design
               </a>{" "}
               by Pablo Stanley
             </li>
             <li className={styles.liLinks}>
-              <a target="_blank" href="https://blackswho.design">
+              <a
+                target="_blank"
+                href="https://blackswho.design"
+                rel="noopener noreferrer"
+              >
                 Blacks Who Design
               </a>{" "}
               by Wes O'Haire
             </li>
             <li className={styles.liLinks}>
-              <a target="_blank" href="http://www.guidetoallyship.com/">
+              <a
+                target="_blank"
+                href="http://www.guidetoallyship.com/"
+                rel="noopener noreferrer"
+              >
                 Guide to Allyship
               </a>{" "}
               by Amélie Lamont
             </li>
             <li className={styles.liLinks}>
-              <a target="_blank" href="https://peopleofcraft.com/">
+              <a
+                target="_blank"
+                href="https://peopleofcraft.com/"
+                rel="noopener noreferrer"
+              >
                 People of Craft
               </a>{" "}
               by Amélie Lamont & Timothy Goodman
@@ -99,6 +114,7 @@ class App extends React.Component {
             <li className={styles.liLinks}>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://medium.com/@nmsanchez/how-to-build-inclusive-culture-360160f417a1"
               >
                 How to Build Inclusive Culture
@@ -108,6 +124,7 @@ class App extends React.Component {
             <li className={styles.liLinks}>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://medium.com/mule-design/be-a-pal-my-dudes-a34c06df1b1d"
               >
                 Be a Pal, My Dudes
@@ -117,6 +134,7 @@ class App extends React.Component {
             <li className={styles.liLinks}>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://larahogan.me/blog/what-sponsorship-looks-like/"
               >
                 What Does Sponsorship Look Like?
@@ -126,6 +144,7 @@ class App extends React.Component {
             <li className={styles.liLinks}>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.huffingtonpost.com/entry/some-garbage-i-used-to-believe-about-equality_us_58501c5be4b0151082221ef7"
               >
                 Some Garbage I Used to Believe About Equality
@@ -138,7 +157,11 @@ class App extends React.Component {
           <p>
             If you've been featured in the directory and you'd rather not be,
             please send a DM to{" "}
-            <a href="https://twitter.com/womenwhodesign" target="_blank">
+            <a
+              href="https://twitter.com/womenwhodesign"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               @womenwhodesign
             </a>{" "}
             on Twitter and you will be removed.
@@ -151,14 +174,24 @@ class App extends React.Component {
 
           <p>
             Special thanks to{" "}
-            <a href="https://netlify.com" target="_blank">
+            <a
+              href="https://netlify.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Netlify
             </a>{" "}
             for their support.
           </p>
           <p>
-            ✌️{" "}
-            <a href="https://twitter.com/julesforrest" target="_blank">
+            <span role="img" aria-label="peace hand sign">
+              ✌️
+            </span>{" "}
+            <a
+              href="https://twitter.com/julesforrest"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               @julesforrest
             </a>
           </p>

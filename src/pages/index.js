@@ -32,7 +32,7 @@ class App extends React.Component {
       tagCount: tagCount,
       filterListVisible: false,
       secondaryFiltersVisible: false,
-      isLoading: true
+      isLoading: true,
     };
     this.onFilterClick = this.onFilterClick.bind(this);
     this.addFilter = this.addFilter.bind(this);
@@ -48,7 +48,7 @@ class App extends React.Component {
       this.setState((prevState, props) => {
         return {
           designers: _.shuffle(prevState.designers),
-          isLoading: false
+          isLoading: false,
         };
       });
     }, 200);
@@ -73,7 +73,7 @@ class App extends React.Component {
   toggleFilterList() {
     const newValue = this.state.filterListVisible;
     this.setState({
-      filterListVisible: !newValue
+      filterListVisible: !newValue,
     });
   }
 
@@ -83,7 +83,7 @@ class App extends React.Component {
     const filtersArray = this.state.filtersArray;
     filtersArray.push(categoryId);
     this.setState({
-      filtersArray: filtersArray
+      filtersArray: filtersArray,
     });
     this.filterDesigners(filtersArray);
   }
@@ -95,20 +95,20 @@ class App extends React.Component {
       filtersArray.splice(index, 1);
     }
     this.setState({
-      filtersArray: filtersArray
+      filtersArray: filtersArray,
     });
     this.filterDesigners(filtersArray);
   }
 
   toggleHiddenFilters() {
-    this.setState(prevState => ({
-      secondaryFiltersVisible: !prevState.secondaryFiltersVisible
+    this.setState((prevState) => ({
+      secondaryFiltersVisible: !prevState.secondaryFiltersVisible,
     }));
   }
 
   clearFilters() {
     this.setState({
-      filtersArray: []
+      filtersArray: [],
     });
   }
 
@@ -123,7 +123,7 @@ class App extends React.Component {
     }
   }
 
-  handleFilterListClick = e => {
+  handleFilterListClick = (e) => {
     if (!this.state.filterListVisible) {
       return;
     }
@@ -146,13 +146,13 @@ class App extends React.Component {
               theme="dark"
               toggleFilterList={this.toggleFilterList}
               isLoading={this.state.isLoading}
-              filterButtonRef={filterButtonRef =>
+              filterButtonRef={(filterButtonRef) =>
                 (this.filterButtonRef = filterButtonRef)
               }
             />
             {!this.state.isLoading && (
               <div
-                ref={filterContainer =>
+                ref={(filterContainer) =>
                   (this.filterContainer = filterContainer)
                 }
                 className={`${styles.filterContainer} ${this.state
@@ -179,6 +179,8 @@ class App extends React.Component {
                           )}
                         />
                       );
+                    } else {
+                      return null;
                     }
                   })}
                 </ul>
@@ -215,7 +217,7 @@ class App extends React.Component {
                 <div className={styles.filterBanner}>
                   <h2 className={styles.filterHeadline}>→ </h2>
                   <div className={styles.filterPillContainer}>
-                    {_.map(this.state.filtersArray, value => {
+                    {_.map(this.state.filtersArray, (value) => {
                       // find category object
                       const category = _.find(categories, function(cat) {
                         return cat.id === value;
@@ -248,7 +250,7 @@ class App extends React.Component {
               >
                 {/* filter through the designers using lodash */}
                 {!this.state.isLoading &&
-                  _.filter(this.state.designers, currentDesigner => {
+                  _.filter(this.state.designers, (currentDesigner) => {
                     // if no filters are checked, return all designers
 
                     if (this.state.filtersArray.length === 0) {
@@ -259,7 +261,7 @@ class App extends React.Component {
                     let containsActiveFilter = false;
 
                     // loop through all the checked filters
-                    this.state.filtersArray.forEach(filter => {
+                    this.state.filtersArray.forEach((filter) => {
                       // if the designer's object tag contains one of the filters, set the containsActiveFilter variable to true
                       if (currentDesigner.node.profile.tags[filter] === true) {
                         containsActiveFilter = true;

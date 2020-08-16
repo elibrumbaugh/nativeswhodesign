@@ -5,12 +5,13 @@ import LocationIcon from "../location";
 import LinkIcon from "../linkIcon";
 import styles from "./profile.module.scss";
 
-const Profile = props => {
+const Profile = (props) => {
   return (
     <div
       className={styles.profile}
       style={{
-        "--profile-theme-color": props.hex === "#FFFFFF" ? "#1da1f2" : props.hex
+        "--profile-theme-color":
+          props.hex === "#FFFFFF" ? "#1da1f2" : props.hex,
       }}
     >
       {props.sizes ? (
@@ -23,7 +24,7 @@ const Profile = props => {
       ) : (
         <img
           className={styles.grayImage}
-          alt={`${props.name}'s profile picture on Twitter.'`}
+          alt={`${props.name}'s profile on Twitter.'`}
           src={props.image.replace("_normal", "_400x400")}
         />
       )}
@@ -37,10 +38,15 @@ const Profile = props => {
         {props.location}
       </p>
       <div className={styles.url}>
-        {props.expandedUrl != "" ? (
+        {props.expandedUrl !== "" ? (
           <span>
             <LinkIcon style={{ marginBottom: "-2px", marginRight: "4px" }} />
-            <a href={props.expandedUrl} className={styles.url} target="_blank">
+            <a
+              href={props.expandedUrl}
+              className={styles.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {props.displayUrl}
             </a>
           </span>
@@ -58,15 +64,17 @@ const Profile = props => {
       <a
         href={`https://twitter.com/${props.handle}`}
         target="_blank"
+        rel="noopener noreferrer"
         className={styles.linkContainer}
       >
         <span className={styles.linkText}>
           <img
             src={twitter}
+            alt="Twitter profile"
             style={{
               height: "12px",
               paddingRight: "8px",
-              marginBottom: "-2px"
+              marginBottom: "-2px",
             }}
           />
           Twitter
