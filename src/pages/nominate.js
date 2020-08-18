@@ -79,9 +79,9 @@ class App extends React.Component {
           <h1 className={styles.h1}>Nominate</h1>
 
           <p className={styles.p}>
-            If you know a woman whose voice is valuable to the design industry,
-            please fill out the form with her Twitter handle and a few words
-            about why you're nominating her.
+            If you know a Native whose voice is valuable to the tech industry,
+            please fill out the form with their Twitter handle and a few words
+            about why you're nominating them.
           </p>
           {!this.state.formSubmitted && (
             <form
@@ -91,7 +91,7 @@ class App extends React.Component {
             >
               <input type="hidden" name="form-name" value="nominations" />
               <label htmlFor="name" className={styles.label}>
-                What's her Twitter handle?
+                What's their Twitter handle?
               </label>
               <input
                 id="name"
@@ -109,7 +109,7 @@ class App extends React.Component {
                 </p>
               )}
               <label htmlFor="reason" className={styles.label}>
-                Why are you nominating her?
+                Why are you nominating them?
               </label>
               <input
                 id="reason"
