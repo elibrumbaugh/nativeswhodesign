@@ -9,17 +9,17 @@ class App extends React.Component {
   render() {
     return (
       <Layout>
-        <Helmet title="About | Women Who Design" />
+        <Helmet title="About | Natives In Tech Talent" />
         <Nav theme={"light"} />
         <div className={styles.container}>
           <h1 className={styles.h1}>About this project</h1>
           <p>
-            Women Who Design is a Twitter directory of accomplished women in the
-            design industry. It aims to help people find notable and relevant
+            Natives In Tech Talent is a Twitter directory of accomplished Natives in the
+            tech industry. It aims to help people find notable and relevant
             voices to follow on Twitter by parsing Twitter bios for popular
             keywords.
           </p>
-          <p>Here are some things Women Who Design can help you with:</p>
+          <p>Here are some things the Natives In Tech Talent directory can help you with:</p>
           <h2 className={styles.emphasis}>
             Use{" "}
             <a
