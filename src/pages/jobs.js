@@ -8,7 +8,7 @@ import ta from "time-ago";
 import { graphql } from "gatsby";
 import LocationIcon from "../components/location";
 
-const Jobs = (props) => {
+const App = (props) => {
   const emptyState =
     props.data.allSeeker.edges[0].node.job.job_title === "Empty";
   return (
@@ -117,7 +117,7 @@ const Jobs = (props) => {
   );
 };
 
-export default Jobs;
+export default App;
 
 export const pageQuery = graphql`
   query Jobs {
