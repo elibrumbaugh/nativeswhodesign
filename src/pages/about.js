@@ -14,12 +14,12 @@ class App extends React.Component {
         <div className={styles.container}>
           <h1 className={styles.h1}>About this project</h1>
           <p>
-            Natives In Tech Talent is a Twitter directory of accomplished Natives in the
-            tech industry. It aims to help people find notable and relevant
+            Women Who Design is a Twitter directory of accomplished women in the
+            design industry. It aims to help people find notable and relevant
             voices to follow on Twitter by parsing Twitter bios for popular
             keywords.
           </p>
-          <p>Here are some things Natives In Tech Talent directory can help you with:</p>
+          <p>Here are some things Women Who Design can help you with:</p>
           <h2 className={styles.emphasis}>
             Use{" "}
             <a
