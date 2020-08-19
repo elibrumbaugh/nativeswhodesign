@@ -11,12 +11,12 @@ module.exports = {
         twitterIdForFollowingList: "1294699293908115457",
       },
     },
-    // {
-    //   resolve: "gatsby-source-seeker",
-    //   options: {
-    //     key: process.env.WWD_SEEKER_KEY
-    //   }
-    // },
+    {
+      resolve: "gatsby-source-seeker",
+      options: {
+        key: process.env.NWD_SEEKER_KEY,
+      },
+    },
     {
       resolve: `gatsby-plugin-sass`,
       options: {
