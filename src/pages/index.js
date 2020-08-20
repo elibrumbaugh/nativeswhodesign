@@ -162,8 +162,9 @@ class App extends React.Component {
                 <ul className={styles.filterUl}>
                   {categories.map((category, index) => {
                     if (
-                      this.state.secondaryFiltersVisible ||
-                      category.primaryFilter
+                      (this.state.secondaryFiltersVisible ||
+                        category.primaryFilter) &&
+                      this.state.tagCount[category.id] > 0
                     ) {
                       return (
                         <FilterItem
