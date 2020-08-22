@@ -73,7 +73,7 @@ class App extends React.Component {
 
     return (
       <Layout>
-        <Helmet title="Nominate | Women Who Design" />
+        <Helmet title="Nominate | Native Talent in Tech" />
         <Nav theme={"light"} />
         <div className={styles.container}>
           <h1 className={styles.h1}>Nominate</h1>

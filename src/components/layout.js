@@ -5,37 +5,37 @@ import "../styles/index.scss";
 const Layout = ({ children }) => (
   <div>
     <Helmet
-      title="Women Who Design"
+      title="Native Talent in Tech"
       meta={[
         {
           property: "description",
           content:
-            "A Twitter directory of accomplished women in the design industry."
+            "A Twitter directory of accomplished Natives in the tech industry.",
         },
-        { property: "og:title", content: "Women Who Design" },
+        { property: "og:title", content: "Native Talent in Tech" },
         {
           property: "og:description",
           content:
-            "A Twitter directory of accomplished women in the design industry."
+            "A Twitter directory of accomplished Natives in the tech industry.",
         },
 
         {
           property: "og:image",
-          content: "https://womenwho.design/opengraph.png"
+          content: "https://talent.nativesintech.org/opengraph.png",
         },
         {
           property: "og:url",
-          content: "https://womenwho.design"
+          content: "https://talent.nativesintech.org",
         },
         { property: "og:type", content: "website" },
-        { property: "og:site_name", content: "Women Who Design" },
-        { property: "twitter:site", content: "@womenwhodesign" },
-        { property: "twitter:creator", content: "@julesforrest" },
+        { property: "og:site_name", content: "Native Talent in Tech" },
+        { property: "twitter:site", content: "@Native_Talent" },
+        { property: "twitter:creator", content: "@nativesintech" },
         { property: "twitter:card", content: "summary_large_image" },
         {
           property: "twitter:image",
-          content: "https://womenwho.design/opengraph.png"
-        }
+          content: "https://talent.nativesintech.org/opengraph.png",
+        },
       ]}
     />
     {children}

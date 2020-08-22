@@ -14,13 +14,13 @@ export default ({ data, location }) => {
   const date = ta.ago(job.job.creation_date);
   const helmetContent = `${job.job.company.name} is hiring a ${
     job.job.job_title
-  } in ${job.job.job_location} on the Women Who Design job board.`;
+  } in ${job.job.job_location} on the Native Talent in Tech job board.`;
   const helmetTitle = `${job.job.company.name} is hiring!`;
-  const helmetLink = `https://womenwho.design${location.pathname}`;
+  const helmetLink = `https://talent.nativesintech.org${location.pathname}`;
   return (
     <Layout>
       <Helmet
-        title={`${job.job.job_title} | Women Who Design`}
+        title={`${job.job.job_title} | Native Talent in Tech`}
         meta={[
           {
             property: "description",
@@ -33,17 +33,17 @@ export default ({ data, location }) => {
           },
           {
             property: "og:image",
-            content: "https://womenwho.design/opengraph.png",
+            content: "https://talent.nativesintech.org/opengraph.png",
           },
           { property: "og:url", content: helmetLink },
           { property: "og:type", content: "website" },
-          { property: "og:site_name", content: "Women Who Design" },
-          { property: "twitter:site", content: "@womenwhodesign" },
-          { property: "twitter:creator", content: "@julesforrest" },
+          { property: "og:site_name", content: "Native Talent in Tech" },
+          { property: "twitter:site", content: "@Native_Talent" },
+          { property: "twitter:creator", content: "@nativesintech" },
           { property: "twitter:card", content: "summary_large_image" },
           {
             property: "twitter:image",
-            content: "https://womenwho.design/opengraph.png",
+            content: "https://talent.nativesintech.org/opengraph.png",
           },
         ]}
       />

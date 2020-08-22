@@ -1,6 +1,6 @@
 {
-  "name": "natives-who-design",
-  "description": "A Twitter directory of accomplished Natives in the design industry.",
+  "name": "native-talent-in-tech",
+  "description": "A Twitter directory of accomplished Natives in the tech industry.",
   "license": "MIT",
   "scripts": {
     "start": "gatsby develop",

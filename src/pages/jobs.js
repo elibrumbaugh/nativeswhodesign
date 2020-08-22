@@ -14,30 +14,33 @@ const App = (props) => {
   return (
     <Layout>
       <Helmet
-        title="Jobs | Women Who Design"
+        title="Jobs | Native Talent in Tech"
         meta={[
           {
             property: "description",
-            content: "Jobs for talented women designers.",
+            content: "Jobs for talented Native technologists.",
           },
-          { property: "og:title", content: "Women Who Design Jobs" },
+          { property: "og:title", content: "Native Talent in Tech Jobs" },
           {
             property: "og:description",
-            content: "Jobs for talented women designers.",
+            content: "Jobs for talented Native technologists.",
           },
           {
             property: "og:image",
-            content: "https://womenwho.design/opengraph.png",
+            content: "https://talent.nativesintech.org/opengraph.png",
           },
-          { property: "og:url", content: "https://womenwho.design/jobs" },
+          {
+            property: "og:url",
+            content: "https://talent.nativesintech.org/jobs",
+          },
           { property: "og:type", content: "website" },
-          { property: "og:site_name", content: "Women Who Design" },
-          { property: "twitter:site", content: "@womenwhodesign" },
-          { property: "twitter:creator", content: "@julesforrest" },
+          { property: "og:site_name", content: "Native Talent in Tech" },
+          { property: "twitter:site", content: "@Native_Talent" },
+          { property: "twitter:creator", content: "@nativesintech" },
           { property: "twitter:card", content: "summary_large_image" },
           {
             property: "twitter:image",
-            content: "https://womenwho.design/opengraph.png",
+            content: "https://talent.nativesintech.org/opengraph.png",
           },
         ]}
       />
@@ -56,7 +59,7 @@ const App = (props) => {
         )}
         {!emptyState && (
           <>
-            <p className={styles.p}>Jobs for talented women who design.</p>
+            <p className={styles.p}>Jobs for talented Natives in technology.</p>
             <ul>
               {props.data.allSeeker.edges.map((job, index) => {
                 const date = ta.ago(job.node.job.creation_date);
