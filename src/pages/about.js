@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "gatsby-link";
 import Nav from "../components/nav";
 import styles from "./about.module.scss";
 import { Helmet } from "react-helmet";
@@ -9,197 +8,218 @@ class App extends React.Component {
   render() {
     return (
       <Layout>
-        <Helmet title="About | Natives In Tech Talent" />
+        <Helmet title="About | Native Talent In Tech" />
         <Nav theme={"light"} />
         <div className={styles.container}>
           <h1 className={styles.h1}>About this project</h1>
           <p>
-            Natives In Tech Talent is a Twitter directory of accomplished Natives in the
-            tech industry. It aims to help people find notable and relevant
-            voices to follow on Twitter by parsing Twitter bios for popular
-            keywords.
+            Native Talent in Tech is a collection of Indigenous technologists
+            across various skills and experiences. The project’s goal is to
+            highlight their work and elevate their voices by parsing Twitter
+            bios for popular keywords. With more representation, we hope that it
+            can also help companies discover the next generation of Natives
+            talent. 
           </p>
-          <p>Here are some things the Natives In Tech Talent directory can help you with:</p>
-          <h2 className={styles.emphasis}>
-            Use{" "}
-            <a
-              href="https://www.proporti.onl/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              proporti.onl
-            </a>{" "}
-            to check the ratio of the people you follow on Twitter.
-          </h2>
-          <p>
-            If you're following more men than women, use this project to follow
-            new women and diversify the voices in your feed. Be aware that a
-            feed of white women is not diverse.
-          </p>
-          <h2 className={styles.emphasis}>
-            If you're a hiring manager, use this project to find candidates.{" "}
-          </h2>
-          <p>
-            Examine the ratio of senior men to senior women in your
-            organization. Are women of color equally represented? Consider
-            hiring women into promotions above their current role.
-          </p>
-
-          <h2 className={styles.emphasis}>
-            If you're organizing a conference, use this project to find
-            speakers.
-          </h2>
-          <p>
-            Ensure that the women's speaking slots are as prominent as the
-            men's. Are women of color equally represented? Consider reaching out
-            to women who have never given a talk before.
-          </p>
-
-          <h2 className={styles.emphasis}>
-            If you have a podcast, use this project to find new guests.{" "}
-          </h2>
-          <p>
-            Be mindful of interruptions and ensure that your women guests get
-            equal speaking time. Are women of color equally represented?
-            Consider inviting women who don't already have an audience.
-          </p>
-
-          <h2 className={styles.emphasis}>Further reading</h2>
-          <p>
-            For becoming a better ally – to women, people of color, LGBTQ,
-            disabled, ESL or any other marginalized group.
-          </p>
-
-          <ul className={styles.ul}>
-            <li className={styles.liLinks}>
-              <a
-                target="_blank"
-                href="https://latinxswhodesign.com"
-                rel="noopener noreferrer"
-              >
-                Latinxs Who Design
-              </a>{" "}
-              by Pablo Stanley
+          <ul style={{ listStyleType: "disc", marginLeft: 20 }}>
+            <li>
+              If you’re a Native in tech, use this project to connect with other
+              Natives.
             </li>
-            <li className={styles.liLinks}>
-              <a
-                target="_blank"
-                href="https://blackswho.design"
-                rel="noopener noreferrer"
-              >
-                Blacks Who Design
-              </a>{" "}
-              by Wes O'Haire
+            <li>
+              If you’re a hiring manager, use this project to find qualified
+              candidates.
             </li>
-            <li className={styles.liLinks}>
-              <a
-                target="_blank"
-                href="http://www.guidetoallyship.com/"
-                rel="noopener noreferrer"
-              >
-                Guide to Allyship
-              </a>{" "}
-              by Amélie Lamont
+            <li>
+              If you’re organizing a conference, use this project to find
+              speakers.
             </li>
-            <li className={styles.liLinks}>
-              <a
-                target="_blank"
-                href="https://peopleofcraft.com/"
-                rel="noopener noreferrer"
-              >
-                People of Craft
-              </a>{" "}
-              by Amélie Lamont & Timothy Goodman
-            </li>
-            <li className={styles.liLinks}>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://medium.com/@nmsanchez/how-to-build-inclusive-culture-360160f417a1"
-              >
-                How to Build Inclusive Culture
-              </a>{" "}
-              by Nicole Sanchez
-            </li>
-            <li className={styles.liLinks}>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://medium.com/mule-design/be-a-pal-my-dudes-a34c06df1b1d"
-              >
-                Be a Pal, My Dudes
-              </a>{" "}
-              by Erika Hall
-            </li>
-            <li className={styles.liLinks}>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://larahogan.me/blog/what-sponsorship-looks-like/"
-              >
-                What Does Sponsorship Look Like?
-              </a>{" "}
-              by Lara Hogan
-            </li>
-            <li className={styles.liLinks}>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.huffingtonpost.com/entry/some-garbage-i-used-to-believe-about-equality_us_58501c5be4b0151082221ef7"
-              >
-                Some Garbage I Used to Believe About Equality
-              </a>{" "}
-              by Johnathan Nightingale
+            <li>
+              If you have a podcast or a show, use this project to find new
+              guests.
             </li>
           </ul>
-
-          <h2 className={styles.emphasis}>Opt out</h2>
+          <h2 className={styles.emphasis}>What does “Native” mean?</h2>
           <p>
-            If you've been featured in the directory and you'd rather not be,
+            “Native” is a general term that refers to a person of Indigenous
+            lineage or peoples of long settlement and connection to specific
+            lands. But like people, the{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://indigenousfoundations.arts.ubc.ca/terminology/#:~:text=on%20global%20actions.-,Native,originated%20from%20a%20particular%20place.&text=In%20Canada%2C%20the%20term%20%E2%80%9CAboriginal,negative%20connotation%20and%20is%20outdated"
+            >
+              terminology
+            </a>{" "}
+            will continue to evolve .
+          </p>
+          <h2 className={styles.emphasis}>Who built this site?</h2>
+          <p>
+            Thanks to the great work of{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/julesforrest"
+            >
+              Jules Forest
+            </a>
+            , creator of{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://womenwho.design/"
+            >
+              Women Who Design
+            </a>
+            , for providing the source code on{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/julesforrest/womenwhodesign"
+            >
+              GitHub
+            </a>{" "}
+            for new directories like this.
+          </p>
+          <p style={{ marginBottom: 0 }}>
+            This site was created by Adam Recvlohe, Eli Taretąndeh Brumbaugh,
+            and Jay Castro from{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://nativesintech.org/"
+            >
+              Natives in Tech
+            </a>
+            , a coalition of Native and non-Native software technologists whose
+            goal is to build technology that reinforces Native beliefs,
+            knowledge, and identity.
+          </p>
+          <h2 className={styles.emphasis}>Are there other sites like this?</h2>
+          <p>
+            Absolutely! Native Talent in Tech drew inspiration by these sites
+            that highlight other underrepresented or marginalized groups.
+          </p>
+          <ul style={{ listStyleType: "disc", marginLeft: 20 }}>
+            <li className={styles.liLinks}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://womenwho.design/"
+              >
+                Women Who Design
+              </a>
+            </li>
+            <li className={styles.liLinks}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://blackswho.design"
+              >
+                Blacks Who Design
+              </a>
+            </li>
+            <li className={styles.liLinks}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://latinxswhodesign.com"
+              >
+                Latinxs Who Design
+              </a>
+            </li>
+            <li className={styles.liLinks}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.apiwho.design/"
+              >
+                API Who Design
+              </a>
+            </li>
+            <li className={styles.liLinks}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://filipinos-who-design.webflow.io/"
+              >
+                Filipinos Who Design
+              </a>
+            </li>
+            <li className={styles.liLinks}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://brazilianswho.design/"
+              >
+                Brazilians Who Design
+              </a>
+            </li>
+            <li className={styles.liLinks}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://indianswhodesign.in/"
+              >
+                Indians Who Design
+              </a>
+            </li>
+            <li className={styles.liLinks}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://queerdesign.club/"
+              >
+                Queer Design Club
+              </a>
+            </li>
+            <li className={styles.liLinks}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.womenwhodraw.com/"
+              >
+                Women Who Draw
+              </a>
+            </li>
+            <li className={styles.liLinks}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://peopleofcraft.com/"
+              >
+                People of Craft
+              </a>
+            </li>
+          </ul>
+          <h2 className={styles.emphasis}>
+            How do I edit my profile or opt-out?
+          </h2>
+          <p>
+            To request changes to your profile or opt-out of the collection,
             please send a DM to{" "}
             <a
-              href="https://twitter.com/womenwhodesign"
               target="_blank"
               rel="noopener noreferrer"
+              href="https://twitter.com/Native_Talent"
             >
-              @womenwhodesign
+              @Native_Talent
             </a>{" "}
-            on Twitter and you will be removed.
+            on Twitter.{" "}
           </p>
-          <h2 className={styles.emphasis}>Note</h2>
+          <h2 className={styles.emphasis}>How do I get involved?</h2>
           <p>
-            This project is in a work-in-progress. If you have a suggestion or
-            find a bug, please let me know.
+            Send a DM to{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/Native_Talent"
+            >
+              @Native_Talent
+            </a>{" "}
+            on Twitter.{" "}
           </p>
 
-          <p>
-            Special thanks to{" "}
-            <a
-              href="https://netlify.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Netlify
-            </a>{" "}
-            for their support.
-          </p>
-          <p>
-            <span role="img" aria-label="peace hand sign">
-              ✌️
-            </span>{" "}
-            <a
-              href="https://twitter.com/julesforrest"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @julesforrest
-            </a>
-          </p>
-          <div className={styles.backContainer}>
-            <Link to="/" className={styles.backLink}>
-              Back to directory
-            </Link>
-          </div>
+          <p>Thank you!</p>
         </div>
       </Layout>
     );
