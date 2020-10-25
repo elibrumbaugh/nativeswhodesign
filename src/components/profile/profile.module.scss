@@ -78,12 +78,13 @@
   }
 }
 
-.handle {
+p > a.handle {
   grid-column: 2 / 5;
   grid-row: 2 / 3;
   align-self: start;
-  color: var(--light-gray);
+  color: var(--nit-primary);
   text-transform: lowercase;
+  text-decoration: none;
   margin: 0;
 }
 

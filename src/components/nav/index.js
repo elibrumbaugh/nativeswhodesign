@@ -1,19 +1,18 @@
 import React from "react";
 import { Link } from "gatsby";
-import Logo from "../logo";
 import styles from "./nav.module.scss";
 
-const Nav = props => {
+const Nav = (props) => {
   return (
     <div
       className={styles.container}
       style={{
         "--background": props.theme === "dark" && "var(--gray)",
-        "--text": props.theme === "dark" && "#fff"
+        "--text": props.theme === "dark" && "#fff",
       }}
     >
       <Link to="/">
-        <Logo className={styles.logo} />
+        <span className={styles.logo}>Native Talent in Tech</span>
       </Link>
       <nav className={styles.links}>
         {props.filter && (
