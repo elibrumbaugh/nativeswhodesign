@@ -21,7 +21,7 @@ const Layout = ({ children }) => (
 
         {
           property: "og:image",
-          content: "https://talent.nativesintech.org/opengraph.png",
+          content: "https://talent.nativesintech.org/natives_in_tech.jpg",
         },
         {
           property: "og:url",
@@ -34,7 +34,7 @@ const Layout = ({ children }) => (
         { property: "twitter:card", content: "summary_large_image" },
         {
           property: "twitter:image",
-          content: "https://talent.nativesintech.org/opengraph.png",
+          content: "https://talent.nativesintech.org/natives_in_tech.jpg",
         },
       ]}
     />
