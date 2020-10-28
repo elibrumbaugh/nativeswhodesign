@@ -20,24 +20,26 @@ class App extends React.Component {
             can also help companies discover the next generation of Natives
             talent. 
           </p>
-          <ul style={{ listStyleType: "disc", marginLeft: 20 }}>
-            <li>
-              If you’re a Native in tech, use this project to connect with other
-              Natives.
-            </li>
-            <li>
-              If you’re a hiring manager, use this project to find qualified
-              candidates.
-            </li>
-            <li>
-              If you’re organizing a conference, use this project to find
-              speakers.
-            </li>
-            <li>
-              If you have a podcast or a show, use this project to find new
-              guests.
-            </li>
-          </ul>
+          <p>
+            <ul style={{ listStyleType: "disc", marginLeft: 20 }}>
+              <li>
+                If you’re a Native in tech, use this project to connect with
+                other Natives.
+              </li>
+              <li>
+                If you’re a hiring manager, use this project to find qualified
+                candidates.
+              </li>
+              <li>
+                If you’re organizing a conference, use this project to find
+                speakers.
+              </li>
+              <li>
+                If you have a podcast or a show, use this project to find new
+                guests.
+              </li>
+            </ul>
+          </p>
           <h2 className={styles.emphasis}>What does “Native” mean?</h2>
           <p>
             “Native” is a general term that refers to a person of Indigenous
@@ -50,7 +52,7 @@ class App extends React.Component {
             >
               terminology
             </a>{" "}
-            will continue to evolve .
+            will continue to evolve.
           </p>
           <h2 className={styles.emphasis}>Who built this site?</h2>
           <p>
@@ -80,9 +82,32 @@ class App extends React.Component {
             </a>{" "}
             for new directories like this.
           </p>
-          <p style={{ marginBottom: 0 }}>
-            This site was created by Adam Recvlohe, Eli Taretąndeh Brumbaugh,
-            and Jay Castro from{" "}
+          <p>
+            This site was created by{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/adamrecvlohe"
+            >
+              Adam Recvlohe
+            </a>
+            ,{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/elibrumbaugh"
+            >
+              Eli Taretąndeh Brumbaugh
+            </a>
+            , and{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/jayciro"
+            >
+              Jay Castro
+            </a>{" "}
+            from{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"

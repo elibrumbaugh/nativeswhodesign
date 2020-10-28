@@ -5,12 +5,12 @@
     var(--page-shell-padding);
   font-family: $pitch;
   color: var(--text);
-  background-color: var(--background);
+  background-color: var(--nit-black);
   a:focus,
   button:focus {
     outline: none;
     border-radius: 1px;
-    box-shadow: var(--background) 0px 0px 0px 2px, var(--text) 0px 0px 0px 3px;
+    // box-shadow: var(--background) 0px 0px 0px 2px, var(--text) 0px 0px 0px 3px;
     text-decoration: none;
     svg {
       box-shadow: var(--background) 0px 0px 0px 5px, var(--text) 0px 0px 0px 6px;
@@ -23,7 +23,7 @@
 .logo {
   display: block;
   width: 150px;
-  fill: var(--text);
+  // fill: var(--text);
   color: var(--nit-white);
   font-size: 32px;
   font-family: "Graphik Web";

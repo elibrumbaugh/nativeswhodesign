@@ -6,11 +6,11 @@
   grid-gap: 0rem 1rem;
   overflow-x: hidden;
   font-family: $graphik;
-  --profile-theme-color: var(--gray);
+  --profile-theme-color: var(--nit-primary);
   font-size: 16px;
 
   svg {
-    fill: var(--profile-theme-color);
+    fill: var(--nit-primary);
   }
 
   a {
@@ -19,10 +19,10 @@
     }
     &:focus {
       color: white;
-      background-color: var(--profile-theme-color);
+      background-color: var(--nit-primary);
       outline: none;
       border-radius: 1px;
-      box-shadow: var(--profile-theme-color) 0px 0px 0px 1px;
+      box-shadow: var(--nit-primary) 0px 0px 0px 1px;
     }
   }
   @media (min-width: $non-mobile) {
@@ -71,7 +71,7 @@
   grid-row: 1 / 2;
   align-self: end;
   font-size: 18px;
-  color: var(--profile-theme-color);
+  color: var(--nit-primary);
   @media (min-width: $desktop) {
     padding-top: 16px;
     align-self: unset;
@@ -91,7 +91,7 @@ p > a.handle {
 .location {
   padding-top: 16px;
   grid-column: 1 / 5;
-  color: var(--light-gray);
+  color: var(--nit-light-grey);
 }
 
 .url {
@@ -100,7 +100,7 @@ p > a.handle {
   padding-top: 0;
   margin-top: 8px;
   margin-bottom: 16px;
-  color: var(--light-gray);
+  color: var(--nit-light-grey);
 }
 
 .description {
@@ -108,10 +108,11 @@ p > a.handle {
   grid-column: 1 / 5;
   padding-bottom: 16px;
   line-height: 1.45;
+  color: var(--nit-light-grey);
 
   a {
     text-decoration: none;
-    color: var(--profile-theme-color);
+    color: var(--nit-primary);
   }
   @media (min-width: $desktop) {
     padding-bottom: 24px;
@@ -137,13 +138,13 @@ p > a.handle {
   margin-top: auto;
   grid-column: 1 / 5;
   transition: all ease 0.2s;
-  background-color: var(--profile-theme-color);
+  background-color: var(--nit-primary);
   position: relative;
   &:hover {
     text-decoration: none !important;
   }
   &:focus {
-    box-shadow: inset var(--profile-theme-color) 0px 0px 0px 2px,
+    box-shadow: inset var(--nit-primary) 0px 0px 0px 2px,
       inset white 0px 0px 0px 3px !important;
     border-radius: 4px;
   }

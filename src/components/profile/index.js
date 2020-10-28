@@ -6,12 +6,7 @@ import styles from "./profile.module.scss";
 
 const Profile = (props) => {
   return (
-    <div
-      className={styles.profile}
-      style={{
-        "--profile-theme-color": "#c69662",
-      }}
-    >
+    <div className={styles.profile}>
       {props.sizes ? (
         <Img
           alt={`${props.name}'s profile picture on Twitter.'`}
