@@ -37,6 +37,14 @@ const Layout = ({ children }) => (
           content: "https://talent.nativesintech.org/natives_in_tech.jpg",
         },
       ]}
+      script={[
+        {
+          async: true,
+          defer: true,
+          "data-website-id": "dd14dc39-8c2b-4bcb-858c-080eb9ad71cb",
+          src: "https://analytics.nativesintech.org/umami.js",
+        },
+      ]}
     />
     {children}
   </div>
