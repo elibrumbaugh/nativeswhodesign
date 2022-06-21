@@ -12,9 +12,9 @@ import BriefcaseIcon from "../components/briefcase";
 export default ({ data, location }) => {
   const job = data.seeker;
   const date = ta.ago(job.job.creation_date);
-  const helmetContent = `${job.job.company.name} is hiring a ${
-    job.job.job_title
-  } in ${job.job.job_location} on the Native Talent in Tech job board.`;
+  const helmetContent = `${job.job.company.name} is hiring a ${job.job.job_title} in ${
+    job.job.job_location
+  } on the Native Talent in Tech job board.`;
   const helmetTitle = `${job.job.company.name} is hiring!`;
   const helmetLink = `https://talent.nativesintech.org${location.pathname}`;
   return (
@@ -33,7 +33,7 @@ export default ({ data, location }) => {
           },
           {
             property: "og:image",
-            content: "https://talent.nativesintech.org/opengraph.png",
+            content: "https://talent.nativesintech.org/native_talent_in_tech.jpg",
           },
           { property: "og:url", content: helmetLink },
           { property: "og:type", content: "website" },
@@ -43,7 +43,7 @@ export default ({ data, location }) => {
           { property: "twitter:card", content: "summary_large_image" },
           {
             property: "twitter:image",
-            content: "https://talent.nativesintech.org/opengraph.png",
+            content: "https://talent.nativesintech.org/native_talent_in_tech.jpg",
           },
         ]}
       />
@@ -64,25 +64,15 @@ export default ({ data, location }) => {
             </span>{" "}
             <span className={styles.interpunct}>·</span>{" "}
             <span>
-              <LocationIcon
-                fill="rgba(30, 30, 30, 1)"
-                style={{ marginBottom: "-2px", marginRight: "8px" }}
-                size={15}
-              />
+              <LocationIcon fill="rgba(30, 30, 30, 1)" style={{ marginBottom: "-2px", marginRight: "8px" }} size={15} />
               {job.job.job_location}
             </span>
           </p>
           <p className={styles.jobDate}>{date}</p>
         </div>
-        <div
-          dangerouslySetInnerHTML={{ __html: job.job.job_description }}
-          className="job-description"
-        />
+        <div dangerouslySetInnerHTML={{ __html: job.job.job_description }} className="job-description" />
 
-        <a
-          href={job.job.job_application_link}
-          className={styles.jobButtonContainer}
-        >
+        <a href={job.job.job_application_link} className={styles.jobButtonContainer}>
           <span className={styles.jobButton}>
             Apply
             <span className={styles.arrow}>→</span>
