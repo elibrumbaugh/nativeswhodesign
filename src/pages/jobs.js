@@ -26,7 +26,7 @@ const App = (props) => {
           },
           {
             property: "og:image",
-            content: "https://talent.nativesintech.org/native_talent_in_tech.svg",
+            content: "https://talent.nativesintech.org/native_talent_in_tech.jpg",
           },
           {
             property: "og:url",
@@ -39,7 +39,7 @@ const App = (props) => {
           { property: "twitter:card", content: "summary_large_image" },
           {
             property: "twitter:image",
-            content: "https://talent.nativesintech.org/native_talent_in_tech.svg",
+            content: "https://talent.nativesintech.org/native_talent_in_tech.jpg",
           },
         ]}
       />

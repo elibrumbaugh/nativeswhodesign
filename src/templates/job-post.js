@@ -33,7 +33,7 @@ export default ({ data, location }) => {
           },
           {
             property: "og:image",
-            content: "https://talent.nativesintech.org/native_talent_in_tech.svg",
+            content: "https://talent.nativesintech.org/native_talent_in_tech.jpg",
           },
           { property: "og:url", content: helmetLink },
           { property: "og:type", content: "website" },
@@ -43,7 +43,7 @@ export default ({ data, location }) => {
           { property: "twitter:card", content: "summary_large_image" },
           {
             property: "twitter:image",
-            content: "https://talent.nativesintech.org/native_talent_in_tech.svg",
+            content: "https://talent.nativesintech.org/native_talent_in_tech.jpg",
           },
         ]}
       />
