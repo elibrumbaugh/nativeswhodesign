@@ -9,8 +9,7 @@ import { graphql } from "gatsby";
 import LocationIcon from "../components/location";
 
 const App = (props) => {
-  const emptyState =
-    props.data.allSeeker.edges[0].node.job.job_title === "Empty";
+  const emptyState = props.data.allSeeker.edges[0].node.job.job_title === "Empty";
   return (
     <Layout>
       <Helmet
@@ -27,7 +26,7 @@ const App = (props) => {
           },
           {
             property: "og:image",
-            content: "https://talent.nativesintech.org/opengraph.png",
+            content: "https://talent.nativesintech.org/native_talent_in_tech.svg",
           },
           {
             property: "og:url",
@@ -40,7 +39,7 @@ const App = (props) => {
           { property: "twitter:card", content: "summary_large_image" },
           {
             property: "twitter:image",
-            content: "https://talent.nativesintech.org/opengraph.png",
+            content: "https://talent.nativesintech.org/native_talent_in_tech.svg",
           },
         ]}
       />
@@ -52,8 +51,7 @@ const App = (props) => {
           <div>
             <p className={styles.p}>
               {" "}
-              Unfortunately, we don't have any jobs to share at the moment.
-              Please check back soon!
+              Unfortunately, we don't have any jobs to share at the moment. Please check back soon!
             </p>
           </div>
         )}
@@ -68,10 +66,7 @@ const App = (props) => {
                     <Link to={job.node.fields.slug} className={styles.jobLink}>
                       <div className={styles.jobLinkInner}>
                         <h2 className={styles.h2}>
-                          {job.node.job.company.name},{" "}
-                          <span style={{ fontWeight: 400 }}>
-                            {job.node.job.job_title}
-                          </span>{" "}
+                          {job.node.job.company.name}, <span style={{ fontWeight: 400 }}>{job.node.job.job_title}</span>{" "}
                           <span className={styles.arrow}>→</span>
                         </h2>
                         <div className={styles.listingMetadataContainer}>
@@ -101,13 +96,9 @@ const App = (props) => {
         <div className={styles.postAJob}>
           <p className={styles.h2}>Post a job</p>
           <p>
-            This job board is powered by{" "}
-            <a href="https://seeker.company">Seeker</a>. If you're interested in
-            supporting this project and posting a job, you can get started{" "}
-            <a href="https://nativesintech.seeker.company/submit/job">
-              right here
-            </a>
-            .
+            This job board is powered by <a href="https://seeker.company">Seeker</a>. If you're interested in supporting
+            this project and posting a job, you can get started{" "}
+            <a href="https://nativesintech.seeker.company/submit/job">right here</a>.
           </p>
         </div>
         <div className={styles.backContainer}>
