@@ -16,7 +16,7 @@ import FilterIcon from "../icons/filter";
 import Button from "../components/button";
 import "@reach/dialog/styles.css";
 
-const TWITTER_ACCOUNT_ID = "855501234924429312";
+const TWITTER_ACCOUNT_ID = "1294699293908115457";
 
 export async function getStaticProps() {
   const profiles = await getTwitterProfiles(TWITTER_ACCOUNT_ID);
