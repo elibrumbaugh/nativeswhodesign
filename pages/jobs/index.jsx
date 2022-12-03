@@ -109,7 +109,7 @@ export default function Jobs({ jobs }) {
             job.
           </p>
           <Button
-            href="https://womenwhodesign.seeker.company/submit/job"
+            href="https://nativesintech.seeker.company/submit/job"
             width="auto"
           >
             Post a job

@@ -37,47 +37,43 @@ export default function Profile({ profile, lazyRoot }) {
 
       <h2 className={styles.name}>{name}</h2>
 
-      <p className={styles.location}>
-        <MapIcon
-          style={{ marginBottom: "-2px", marginRight: "2px" }}
-          size={14}
-        />
-        {location || "N/A"}
+      <p className={styles.handleContainer}>
+        <TwitterIcon />
+        <a
+          className={styles.handle}
+          href={`https://twitter.com/${handle}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ display: "inline-block" }}
+        >
+          @{handle}
+        </a>
       </p>
 
-      <div className={styles.url}>
-        <LinkIcon size={14} />
+      {location && (
+        <p className={styles.location}>
+          <MapIcon
+            style={{ marginBottom: "-2px", marginRight: "2px" }}
+            size={14}
+          />
+          {location}
+        </p>
+      )}
 
-        {expandedUrl ? (
+      {expandedUrl && (
+        <div className={styles.url}>
+          <LinkIcon size={14} />
           <a href={expandedUrl} target="_blank" rel="noopener noreferrer">
             {displayUrl}
           </a>
-        ) : (
-          <span>N/A</span>
-        )}
-      </div>
+        </div>
+      )}
 
       <p
         className={styles.description}
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: description }}
       />
-
-      <Button
-        href={`https://twitter.com/${handle}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{
-          "--background": "var(--profile-theme-color)",
-          gridColumn: "1 / -1",
-          marginTop: "auto",
-          marginBottom: 0,
-        }}
-      >
-        <span className={styles.linkText}>
-          <TwitterIcon style={{ color: "white" }} /> Twitter
-        </span>
-      </Button>
     </div>
   );
 }

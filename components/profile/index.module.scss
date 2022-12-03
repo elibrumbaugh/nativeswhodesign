@@ -12,7 +12,7 @@
   contain-intrinsic-size: 500px;
 
   svg {
-    color: var(--profile-theme-color);
+    color: var(--nit-primary);
   }
 
   a {
@@ -74,7 +74,7 @@
   align-self: center;
   font-size: 18px;
   padding: 16px 0 16px;
-  color: var(--profile-theme-color);
+  color: var(--nit-primary);
   @media (min-width: $desktop) {
     padding: 16px 0 12px;
     align-self: unset;
@@ -116,7 +116,7 @@
 
   a {
     text-decoration: none;
-    color: var(--profile-theme-color);
+    color: var(--nit-primary);
   }
 }
 
@@ -126,4 +126,20 @@
   grid-gap: 8px;
   align-items: center;
   line-height: 0;
+}
+
+.handleContainer {
+  padding-bottom: 8px;
+  grid-column: 1/5;
+  display: inline-grid;
+  grid-template-columns: 14px auto 1fr;
+  grid-gap: 8px;
+  align-items: center;
+  overflow: none;
+}
+
+.handle {
+  color: var(--nit-primary);
+  text-decoration: none;
+
 }
