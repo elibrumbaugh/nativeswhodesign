@@ -29,16 +29,19 @@ export async function getStaticProps() {
 export default function Jobs({ jobs }) {
   const emptyState = jobs.length === 0;
 
-  const description = "Jobs for talented women designers.";
+  const description = "Jobs for talented Native technologists.";
 
   return (
     <>
       <Head>
-        <title>Jobs | Women Who Design</title>
+        <title>Jobs | Native Talent in Tech</title>
         <meta property="description" content={description} />
-        <meta property="og:title" content="Women Who Design Jobs" />
+        <meta property="og:title" content="Native Talent in Tech Jobs" />
         <meta property="og:description" content={description} />
-        <meta property="og:url" content="https://womenwho.design/jobs" />
+        <meta
+          property="og:url"
+          content="https://talent.nativesintech.org/jobs"
+        />
       </Head>
       <Nav theme="light" />
       <div className={styles.container}>
@@ -55,10 +58,10 @@ export default function Jobs({ jobs }) {
         )}
         {!emptyState && (
           <>
-            <p className={styles.p}>Jobs for talented women who design.</p>
+            <p className={styles.p}>Jobs for talented Natives in tech.</p>
             <div style={{ margin: "24px 0" }}>
               <Button
-                href="https://womenwhodesign.seeker.company/submit/job"
+                href="https://nativesintech.seeker.company/submit/job"
                 width="auto"
               >
                 Post a job
@@ -109,7 +112,7 @@ export default function Jobs({ jobs }) {
             job.
           </p>
           <Button
-            href="https://womenwhodesign.seeker.company/submit/job"
+            href="https://nativesintech.seeker.company/submit/job"
             width="auto"
           >
             Post a job

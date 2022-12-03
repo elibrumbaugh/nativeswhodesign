@@ -16,7 +16,7 @@ import FilterIcon from "../icons/filter";
 import Button from "../components/button";
 import "@reach/dialog/styles.css";
 
-const TWITTER_ACCOUNT_ID = "855501234924429312";
+const TWITTER_ACCOUNT_ID = "1294699293908115457";
 
 export async function getStaticProps() {
   const profiles = await getTwitterProfiles(TWITTER_ACCOUNT_ID);
@@ -149,29 +149,26 @@ export default function Home({ profiles, categories }) {
               return (
                 <div key={section.id}>
                   <h3 className={styles.filterCategoryTitle}>{section.name}</h3>
-                  {sortedCategoriesInSection.map((category) => (
-                    <FilterItem
-                      key={category.id}
-                      id={category.id}
-                      type="row"
-                      onChange={(e) => {
-                        const isChecked = e.target.checked;
-                        filterItemOnChange(e, section);
-                        gtag("event", isChecked ? "check" : "uncheck", {
-                          event_category: "filter",
-                          event_label: category.title,
-                          value: 1,
-                        });
-                      }}
-                      isChecked={
-                        selectedFilters[section.id]?.includes(category.id) ||
-                        false
-                      }
-                      className={styles.filterItemInput}
-                      title={category.title}
-                      count={category.count}
-                    />
-                  ))}
+                  {sortedCategoriesInSection
+                    .filter((c) => c.count > 0)
+                    .map((category) => (
+                      <FilterItem
+                        key={category.id}
+                        id={category.id}
+                        type="row"
+                        onChange={(e) => {
+                          const isChecked = e.target.checked;
+                          filterItemOnChange(e, section);
+                        }}
+                        isChecked={
+                          selectedFilters[section.id]?.includes(category.id) ||
+                          false
+                        }
+                        className={styles.filterItemInput}
+                        title={category.title}
+                        count={category.count}
+                      />
+                    ))}
                 </div>
               );
             })}

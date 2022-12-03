@@ -4,11 +4,10 @@ import "reset-css";
 import "../styles/global.css";
 import "../styles/index.scss";
 
-export default function WomenWhoDesign({ Component, pageProps }) {
-  const title = "Women Who Design";
-  const description =
-    "A Twitter directory of accomplished women in the design industry.";
-  const image = "https://womenwho.design/opengraph.png";
+export default function NativeTalentInTech({ Component, pageProps }) {
+  const title = "Native Talent in Tech";
+  const description = "A Twitter directory of accomplished Natives in tech.";
+  const image = "https://talent.nativesintech.org/opengraph.png";
 
   return (
     <>
@@ -18,11 +17,11 @@ export default function WomenWhoDesign({ Component, pageProps }) {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
-        <meta property="og:url" content="https://womenwho.design" />
+        <meta property="og:url" content="https://talent.nativesintech.org" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={title} />
-        <meta property="twitter:site" content="@womenwhodesign" />
-        <meta property="twitter:creator" content="@julesforrest" />
+        <meta property="twitter:site" content="@Native_Talent" />
+        <meta property="twitter:creator" content="@nativesintech" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:image" content={image} />
         <link
@@ -37,22 +36,15 @@ export default function WomenWhoDesign({ Component, pageProps }) {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
+
+        <script
+          async
+          defer
+          data-website-id="dd14dc39-8c2b-4bcb-858c-080eb9ad71cb"
+          src="https://analytics.nativesintech.org/umami.js"
+        ></script>
       </Head>
       <Component {...pageProps} />
-
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=UA-99095616-1"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-99095616-1');
-        `}
-      </Script>
     </>
   );
 }
