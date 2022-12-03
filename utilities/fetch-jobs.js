@@ -23,22 +23,23 @@ export default async function fetchJobs() {
   const data = await res.json();
 
   return (
-    data &&
-    data.results &&
-    data.result.map((job) => ({
-      id: job.id,
-      job_title: job.job_title,
-      job_link: job.job_link,
-      job_application_link: job.job_application_link,
-      job_location: job.job_location,
-      creation_date: job.creation_date,
-      is_featured: job.is_featured,
-      company: {
-        name: job.company.name,
-        company_url: job.company.company_url,
-      },
-      slug: generateJobSlug(job.id, job.company.name, job.job_title),
-      job_description: marked(job.job_description),
-    }))
+    (data &&
+      data.results &&
+      data.results.map((job) => ({
+        id: job.id,
+        job_title: job.job_title,
+        job_link: job.job_link,
+        job_application_link: job.job_application_link,
+        job_location: job.job_location,
+        creation_date: job.creation_date,
+        is_featured: job.is_featured,
+        company: {
+          name: job.company.name,
+          company_url: job.company.company_url,
+        },
+        slug: generateJobSlug(job.id, job.company.name, job.job_title),
+        job_description: marked(job.job_description),
+      }))) ||
+    []
   );
 }
