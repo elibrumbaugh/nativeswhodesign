@@ -36,14 +36,14 @@ export async function getStaticProps({ params }) {
 
 export default function Job({ job }) {
   const date = ta.ago(job.creation_date);
-  const headContent = `${job.company.name} is hiring a ${job.job_title} in ${job.job_location} on the Women Who Design job board.`;
+  const headContent = `${job.company.name} is hiring a ${job.job_title} in ${job.job_location} on the Native Talent in Tech job board.`;
   const headTitle = `${job.company.name} is hiring!`;
-  const headLink = `https://womenwho.design/jobs/${job.slug}`;
+  const headLink = `https://talent.nativesintech.org/jobs/${job.slug}`;
 
   return (
     <>
       <Head>
-        <title>{job.job_title} | Women Who Design</title>
+        <title>{job.job_title} | Native Talent in Tech</title>
         <meta property="description" content={headContent} />
         <meta property="og:title" content={headTitle} />
         <meta property="og:description" content={headContent} />

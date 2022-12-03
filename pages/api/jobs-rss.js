@@ -9,13 +9,13 @@ export default async function handler(req, res) {
   res.status(200).end(`
     <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
       <channel>
-        <title><![CDATA[Women Who Design Job Board]]></title>
+        <title><![CDATA[Native Talent in Tech Job Board]]></title>
 
         <description>
           <![CDATA[Product design, design systems and web development.]]>
         </description>
 
-        <link>https://womenwho.design</link>
+        <link>https://talent.nativesintech.org</link>
 
         <generator>Next.js</generator>
 
@@ -29,8 +29,8 @@ export default async function handler(req, res) {
             <description><![CDATA[${job.company.name} is hiring a ${
               job.job_title
             } in ${job.job_location}.]]></description>
-            <link>https://womenwho.design/jobs/${job.slug}</link>
-            <guid isPermaLink="false">https://womenwho.design/jobs/${
+            <link>https://talent.nativesintech.org/jobs/${job.slug}</link>
+            <guid isPermaLink="false">https://talent.nativesintech.org/jobs/${
               job.slug
             }</guid>
             <pubDate>${new Date(job.creation_date).toUTCString()}</pubDate>
