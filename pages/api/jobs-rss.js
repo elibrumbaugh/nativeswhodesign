@@ -15,22 +15,20 @@ export default async function handler(req, res) {
           <![CDATA[Product design, design systems and web development.]]>
         </description>
 
-        <link>https://talent.nativesintech.org</link>
+        <link>https://talent.nativesintech.org/jobs</link>
 
         <generator>Next.js</generator>
 
         <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
 
-        ${
-          jobs &&
-          jobs
-            .map(
-              (job) => `
+        ${jobs
+          .map(
+            (job) => `
           <item>
             <title><![CDATA[${job.company.name}, ${job.job_title}]]></title>
             <description><![CDATA[${job.company.name} is hiring a ${
-                job.job_title
-              } in ${job.job_location}.]]></description>
+              job.job_title
+            } in ${job.job_location}.]]></description>
             <link>https://talent.nativesintech.org/jobs/${job.slug}</link>
             <guid isPermaLink="false">https://talent.nativesintech.org/jobs/${
               job.slug
@@ -38,9 +36,8 @@ export default async function handler(req, res) {
             <pubDate>${new Date(job.creation_date).toUTCString()}</pubDate>
           </item>
         `
-            )
-            .join("\n")
-        }
+          )
+          .join("\n")}
       </channel>
     </rss>
   `);
