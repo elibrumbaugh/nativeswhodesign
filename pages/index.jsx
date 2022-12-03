@@ -335,30 +335,32 @@ export default function Home({ profiles, categories }) {
                         <h3 className={styles.filterCategoryTitle}>
                           {section.name}
                         </h3>
-                        {sortedCategoriesInSection.map((category) => (
-                          <FilterItem
-                            key={category.id}
-                            id={category.id}
-                            type="pill"
-                            onChange={(e) => {
-                              filterItemOnChange(e, section);
-                            }}
-                            isChecked={
-                              selectedFilters[section.id]?.includes(
-                                category.id
-                              ) || false
-                            }
-                            className={styles.filterItemInput}
-                            title={category.title}
-                          />
-                        ))}
+                        {sortedCategoriesInSection
+                          .filter((c) => c.count > 0)
+                          .map((category) => (
+                            <FilterItem
+                              key={category.id}
+                              id={category.id}
+                              type="pill"
+                              onChange={(e) => {
+                                filterItemOnChange(e, section);
+                              }}
+                              isChecked={
+                                selectedFilters[section.id]?.includes(
+                                  category.id
+                                ) || false
+                              }
+                              className={styles.filterItemInput}
+                              title={category.title}
+                            />
+                          ))}
                       </div>
                     );
                   })}
                 </div>
                 <div className={styles.dialogFooter}>
                   <Button type="button" onClick={close}>
-                    View {filteredDesigners.length} designer
+                    View {filteredDesigners.length} Technologist
                     {filteredDesigners.length !== 1 ? "s" : ""}
                   </Button>
                 </div>

@@ -89,7 +89,6 @@
 }
 
 .location {
-  padding-top: 16px;
   @media (min-width: $desktop) {
     padding-top: 0;
   }
@@ -135,6 +134,10 @@
   grid-gap: 8px;
   align-items: center;
   overflow: none;
+
+  @media (max-width: $desktop) {
+    margin-top: 16px;
+  }
 }
 
 .handle {
