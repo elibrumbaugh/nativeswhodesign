@@ -13,15 +13,15 @@ export async function getStaticPaths() {
   const jobs = await fetchJobs();
 
   return {
-    ...(jobs && {
-      paths: jobs.map((job) => {
-        return {
-          params: {
-            slug: job.slug,
-          },
-        };
-      }),
-    }),
+    paths: jobs
+      ? jobs.map((job) => {
+          return {
+            params: {
+              slug: job.slug,
+            },
+          };
+        })
+      : [],
     fallback: false,
   };
 }
