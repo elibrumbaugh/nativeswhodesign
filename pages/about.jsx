@@ -133,7 +133,11 @@ const App = () => (
       <h2 className={styles.emphasis}>Opt out</h2>
       <p>
         This page is generated from the follow list of{" "}
-        <a target="_blank" href="https://twitter.com/Native_Talent">
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://twitter.com/Native_Talent"
+        >
           Native_Talent
         </a>
         .
