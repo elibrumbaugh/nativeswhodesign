@@ -132,6 +132,13 @@ const App = () => (
       </Button>
       <h2 className={styles.emphasis}>Opt out</h2>
       <p>
+        This page is generated from the follow list of{" "}
+        <a target="_blank" href="https://twitter.com/Native_Talent">
+          Native_Talent
+        </a>
+        .
+      </p>
+      <p>
         If you’ve been featured in the directory and you’d rather not be, please
         send an email to{" "}
         <a href="mailto:hello@nativesintech.org">hello@nativesintech.org</a> and
