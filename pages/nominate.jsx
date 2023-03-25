@@ -18,7 +18,7 @@ export default function Nominate() {
           If you know a Native whose voice is valuable to the tech industry,
           please email{" "}
           <a href="mailto:hello@nativesintech.org">hello@nativesintech.org</a>{" "}
-          with their Twitter handle and a few words about why you’re nominating
+          with their Twitter handle and a few words about why you're nominating
           them.
         </p>
 

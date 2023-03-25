@@ -15,23 +15,23 @@ const App = () => (
       <h1 className={styles.h1}>About this project</h1>
       <p>
         Native Talent in Tech is a collection of Indigenous technologists across
-        various skills and experiences. The project’s goal is to highlight their
+        various skills and experiences. The project's goal is to highlight their
         work and elevate their voices by parsing Twitter bios for popular
         keywords. With more representation, we hope that it can also help
-        companies discover the next generation of Native talent. 
+        companies discover the next generation of Native talent.
       </p>
 
       <ul style={{ listStyle: "disc" }}>
         <li>
-          If you’re a Native in tech, use this project to connect with other
+          If you're a Native in tech, use this project to connect with other
           Natives.
         </li>
         <li>
-          If you’re a hiring manager, use this project to find qualified
+          If you're a hiring manager, use this project to find qualified
           candidates.
         </li>
         <li>
-          If you’re organizing a conference, use this project to find speakers.
+          If you're organizing a conference, use this project to find speakers.
         </li>
         <li>
           If you have a podcast or a show, use this project to find new guests.
@@ -42,7 +42,7 @@ const App = () => (
       <p>
         This project is a fork of Women Who Design. They are happy to support
         new directories highlighting underrepresented or marginalized groups. If
-        you’re looking to start a similar effort, feel free to fork the project
+        you're looking to start a similar effort, feel free to fork the project
         on <a href="https://github.com/julesforrest/womenwhodesign">GitHub</a>.
       </p>
 
@@ -121,7 +121,7 @@ const App = () => (
       <h1 className={styles.h1}>Other notes</h1>
       <h2 className={styles.emphasis}>Support</h2>
       <p>
-        Native Talent in Tech is an independent project. If you’re interested in
+        Native Talent in Tech is an independent project. If you're interested in
         supporting it, please consider posting a job.
       </p>
       <Button
@@ -143,7 +143,7 @@ const App = () => (
         .
       </p>
       <p>
-        If you’ve been featured in the directory and you’d rather not be, please
+        If you've been featured in the directory and you'd rather not be, please
         send an email to{" "}
         <a href="mailto:hello@nativesintech.org">hello@nativesintech.org</a> and
         you will be removed.

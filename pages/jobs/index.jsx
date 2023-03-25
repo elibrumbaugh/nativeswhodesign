@@ -51,7 +51,7 @@ export default function Jobs({ jobs }) {
           <div>
             <p className={styles.p}>
               {" "}
-              Unfortunately, we don’t have any jobs to share at the moment.
+              Unfortunately, we don't have any jobs to share at the moment.
               Please check back soon!
             </p>
           </div>
