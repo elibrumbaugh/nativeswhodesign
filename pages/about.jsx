@@ -15,23 +15,24 @@ const App = () => (
       <h1 className={styles.h1}>About this project</h1>
       <p>
         Native Talent in Tech is a collection of Indigenous technologists across
-        various skills and experiences. The project's goal is to highlight their
-        work and elevate their voices by parsing Twitter bios for popular
+        various skills and experiences. The project&apos;s goal is to highlight
+        their work and elevate their voices by parsing Twitter bios for popular
         keywords. With more representation, we hope that it can also help
         companies discover the next generation of Native talent.
       </p>
 
       <ul style={{ listStyle: "disc" }}>
         <li>
-          If you're a Native in tech, use this project to connect with other
-          Natives.
+          If you&apos;re a Native in tech, use this project to connect with
+          other Natives.
         </li>
         <li>
-          If you're a hiring manager, use this project to find qualified
+          If you&apos;re a hiring manager, use this project to find qualified
           candidates.
         </li>
         <li>
-          If you're organizing a conference, use this project to find speakers.
+          If you&apos;re organizing a conference, use this project to find
+          speakers.
         </li>
         <li>
           If you have a podcast or a show, use this project to find new guests.
@@ -42,8 +43,9 @@ const App = () => (
       <p>
         This project is a fork of Women Who Design. They are happy to support
         new directories highlighting underrepresented or marginalized groups. If
-        you're looking to start a similar effort, feel free to fork the project
-        on <a href="https://github.com/julesforrest/womenwhodesign">GitHub</a>.
+        you&apos;re looking to start a similar effort, feel free to fork the
+        project on{" "}
+        <a href="https://github.com/julesforrest/womenwhodesign">GitHub</a>.
       </p>
 
       <h2 className={styles.emphasis}>What does “Native” mean?</h2>
@@ -121,8 +123,8 @@ const App = () => (
       <h1 className={styles.h1}>Other notes</h1>
       <h2 className={styles.emphasis}>Support</h2>
       <p>
-        Native Talent in Tech is an independent project. If you're interested in
-        supporting it, please consider posting a job.
+        Native Talent in Tech is an independent project. If you&apos;re
+        interested in supporting it, please consider posting a job.
       </p>
       <Button
         href="https://womenwhodesign.seeker.company/submit/job"
@@ -143,8 +145,8 @@ const App = () => (
         .
       </p>
       <p>
-        If you've been featured in the directory and you'd rather not be, please
-        send an email to{" "}
+        If you&apos;ve been featured in the directory and you&apos;d rather not
+        be, please send an email to{" "}
         <a href="mailto:hello@nativesintech.org">hello@nativesintech.org</a> and
         you will be removed.
       </p>
