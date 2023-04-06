@@ -13,7 +13,7 @@ export async function getStaticProps() {
 
   if (!token) {
     throw new Error(
-      "You must provide an API key to `gatsby-source-seeker`. \n If you don't have a Seeker API key, follow these steps: \n 1. Delete the gatsby-source-seeker plugin (lines 12-17) from the gatsby-config.js file \n 2. Delete the entire gatsby-node.js file \n 3. Delete the src/pages/jobs.js file \n 4. Remove the link to the jobs page from the src/components/nav file"
+      "You must provide an API key to `gatsby-source-seeker`. \n If you don&apos;t have a Seeker API key, follow these steps: \n 1. Delete the gatsby-source-seeker plugin (lines 12-17) from the gatsby-config.js file \n 2. Delete the entire gatsby-node.js file \n 3. Delete the src/pages/jobs.js file \n 4. Remove the link to the jobs page from the src/components/nav file"
     );
   }
 
@@ -51,7 +51,7 @@ export default function Jobs({ jobs }) {
           <div>
             <p className={styles.p}>
               {" "}
-              Unfortunately, we don't have any jobs to share at the moment.
+              Unfortunately, we don&apos;t have any jobs to share at the moment.
               Please check back soon!
             </p>
           </div>
